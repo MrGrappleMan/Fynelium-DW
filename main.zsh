@@ -7,7 +7,7 @@ dfwrt /Library/Preferences/com.apple.loginwindow DesktopPicture ""
 
 dfwrt com.apple.LaunchServices LSQuarantine -bool false
 
-# keep disk integrity
+# ON Disk integrity
 dfwrt com.apple.frameworks.diskimages skip-verify -bool false
 dfwrt com.apple.frameworks.diskimages skip-verify-locked -bool false
 dfwrt com.apple.frameworks.diskimages skip-verify-remote -bool false
@@ -24,10 +24,21 @@ dfwrt com.apple.Finder WarnOnEmptyTrash -bool true
 dfwrt com.apple.finder "FXEnableExtensionChangeWarning" -bool false
 dfwrt /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool NO
 
-# Keep backups
+# ON TimeMachine backups
 tmutil enable
 
-# Homebrew Telemtry
+# ON Homebrew Telemetry
 brew analytics on
 
+# ON ReportCrash
+launchctl unload -w /System/Library/LaunchAgents/com.apple.ReportCrash.plist
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist
+
 pmset -b sleep 2
+
+# ON HiDPI
+sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+
+# Bluetooth
+defaults write bluetoothaudiod "Enable AptX codec" -bool true
+defaults write bluetoothaudiod "Enable AAC codec" -bool true
