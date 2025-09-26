@@ -12,6 +12,11 @@ dfwrt com.apple.frameworks.diskimages skip-verify -bool false
 dfwrt com.apple.frameworks.diskimages skip-verify-locked -bool false
 dfwrt com.apple.frameworks.diskimages skip-verify-remote -bool false
 
+# Font Smoothing
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
+
+# Finder
 dfwrt -g NSAutomaticSpellingCorrectionEnabled -bool true
 dfwrt NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 dfwrt NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
