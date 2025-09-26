@@ -1,0 +1,5 @@
+brew "git"
+brew "python"
+cask "visual-studio-code"
+cask "google-chrome"
+brew "fish"
