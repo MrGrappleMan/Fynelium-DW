@@ -1,1 +1,2 @@
-# Fynelium-DW
+# Fynelium for MacOS
+
