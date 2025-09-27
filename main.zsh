@@ -53,3 +53,5 @@ sudo dfwrt /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEn
 # Bluetooth Optimizations, better bluetooth experience
 dfwrt bluetoothaudiod "Enable AptX codec" -bool true
 dfwrt bluetoothaudiod "Enable AAC codec" -bool true
+
+softwareupdate --install-rosetta --agree-to-license
