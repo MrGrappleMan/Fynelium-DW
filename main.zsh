@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 ## Variables
-variable dfwrt = "dfwrt"
+dfwrt="defaults write"
 
 # Integrity measures, prevents corruption and data loss
 dfwrt com.apple.frameworks.diskimages skip-verify -bool false
@@ -30,13 +30,13 @@ dfwrt com.apple.finder "FXEnableExtensionChangeWarning" -bool false
 dfwrt /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool NO
 dfwrt com.apple.finder FXDefaultSearchScope -string "SCcf"
 
-# ON Telemetry
+# Enable Telemetry
 launchctl load -w /System/Library/LaunchAgents/com.apple.ReportCrash.plist
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist
 brew analytics on
 dfwrt com.apple.appleseed.FeedbackAssistant Autogather -bool true
 
-# ON Security
+# Security
 dfwrt com.apple.LaunchServices LSQuarantine -bool true
 dfwrt com.apple.Safari WarnAboutFraudulentWebsites -bool true
 
