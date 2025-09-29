@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env fish
 
 ## Variables
 dfwrt="defaults write"
@@ -54,4 +54,5 @@ sudo dfwrt /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEn
 dfwrt bluetoothaudiod "Enable AptX codec" -bool true
 dfwrt bluetoothaudiod "Enable AAC codec" -bool true
 
+# 64 bit application support
 softwareupdate --install-rosetta --agree-to-license
