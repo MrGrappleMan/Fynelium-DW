@@ -1,4 +1,5 @@
 ![Last Commit made to repository](https://img.shields.io/github/last-commit/MrGrappleMan/Fynelium-DW?style=for-the-badge)
+# Fynelium for MacOS
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
