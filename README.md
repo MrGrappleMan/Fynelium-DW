@@ -9,4 +9,4 @@ fish_add_path "/opt/homebrew/bin/"
 
 ```
 
-### [Documentation](https://www.notion.so/MacOS-27642d161cf980cb9b8ee41dcabd5f31?source=copy_link)
+### [Extra Documentation](https://www.notion.so/MacOS-27642d161cf980cb9b8ee41dcabd5f31?source=copy_link)
