@@ -1,6 +1,17 @@
-![Last Commit made to repository](https://img.shields.io/github/last-commit/MrGrappleMan/Fynelium-DW?style=for-the-badge)
-# Fynelium for MacOS
+<div align="center">
 
+# 🌌 Fynelium for MacOS
+
+![License](https://img.shields.io/github/license/MrGrappleMan/Fynelium-DW?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/MrGrappleMan/Fynelium-DW?style=for-the-badge)
+![Contributors](https://img.shields.io/github/contributors/MrGrappleMan/Fynelium-DW?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/MrGrappleMan/Fynelium-DW?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/MrGrappleMan/Fynelium-DW?style=for-the-badge)
+
+**✨ Optimize 🔹 Beautify 🔹 Automate 🔹 Effortlessly ✨**
+
+</div>
+## ⚙️ Installation
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install fish
